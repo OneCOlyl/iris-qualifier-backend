@@ -2,8 +2,7 @@ use std::io::Write;
 use std::process::Command;
 
 fn main() {
-    let output = Command::new("python3")
-        .arg("irisqualifier-method")
+    let output = Command::new("irisqualifier-method")
         .output()
         .expect("Failed to execute command");
 
